@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors and psuedo</title>
+</head>
+ <style>
+article>p::first-letter{
+color: brown;
+}
+a:active{
+    color: rgb(162, 237, 31);
+}
+a:hover{
+    color: orange;
+}
+a:visited{
+    color:rgb(255, 0, 4)
+}
+ </style>
+
+<body>
+    <!-- <div> -->
+    <div>im a seperate div</div>
+    <p>im a p placed next to seperate div</p>
+    <a href="https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg" target="_blank">mail to</a>
+    <p>hii</p>
+    <div>
+        <p>im the 1st p inside 1st div</p>
+        <p>im the 2nd p inside the 1st div</p>
+        <article>
+            <p>im the p inside article1 which is inside the 1st div</p>
+            <div>hii im div inside article1</div>
+            <p>im the 2nd p inside article1</p>
+        </article>
+        <article>
+            <p>im the p inside article2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum tenetur expedita quos fugit, quibusdam repellendus ducimus impedit! Adipisci maiores impedit dicta odio asperiores, ipsam minima assumenda maxime praesentium voluptates placeat!</p>
+            <p>im the 2nd p inside article2</p>
+        </article>
+    </div>
+    <p>im the 1st p outside 1st div, i have no parent</p>
+    <p>im the 2nd p outside the 1st div, i have no parent</p>
+    <h3>im heading2</h3>
+    <p>im the p next to heading, i have no parent</p>
+<!-- </div> -->
+
+</body>
+</html>

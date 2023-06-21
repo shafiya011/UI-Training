@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <script src="https://kit.fontawesome.com/467cf5515a.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        header{
+            height:50px;
+            width: 100%;
+            background-color:black ;
+            padding-top: 10px;
+            box-shadow: 5px 5px 2px rgb(1, 94, 59);
+            position: fixed;
+            z-index: 10;
+        }
+        .icons{
+            padding:5px 7px;
+            margin: 7px;
+            background-color: rgb(138, 31, 238);
+            box-shadow: 2px 1px 6px white;
+            color: bisque;   
+        }
+        button i{
+            padding-right:5px;
+        }
+        .maindiv{
+            height: 700px;
+            width: 100%;
+            padding-top: 70px;
+            margin-top: 50px; 
+            background-color: rgb(151, 239, 151);
+            position: relative;
+         } 
+        #div1{ 
+            height:500px;
+            width: 300px;
+            background-color: rgb(247, 143, 143);
+            position: relative;
+            top: 70px;
+        }
+        #div2{
+            height: 400px;
+            width: 250px;
+            background-color: lightsteelblue;
+            position: absolute;
+             right: 50px; 
+            
+        } 
+    </style>
+</head>
+<body>
+    <header>
+        <button class="icons" id="google"><i class="fa-brands fa-google"></i>Google</button>
+        <button class="icons" id="ig"><i class="fa-brands fa-square-instagram"></i>Instagram</button>
+        <button class="icons" id="twt"><i class="fa-brands fa-twitter fa-bounce"></i>twitter</button>
+        <button class="icons" id="fb"><i class="fa-brands fa-facebook-f"></i>facebook</button>
+    </header>
+    <!-- <main> -->
+        <div class="maindiv">
+        <div id="div1">div1<div id="div2">div2</div></div>
+    </div>
+    <!-- </main> -->
+</body>
+</html>
