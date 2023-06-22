@@ -5,28 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google_pro</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+ 
    <style>
         body{
             margin: 0;
-            /* background-image: url('chrome://new-tab-page/icons/google_logo.svg'); */
             
         }
-        .maindiv{
-            height: 320px;
-            width: 100%;
-            /* border: 1px solid black; */
-            background-color: white;
-            padding-top: 60px;
-        }
+       
         .navbar{
             background-color: white;
             height: 70px;
             width: 100%;
             margin-top: 28px;
+            position: fixed;
+            top: 0;
         }
         .navdiv{
             height: 70px;
@@ -37,10 +29,7 @@
             justify-content: space-evenly;
             /* padding: 5px; */
         }
-        .material-symbols-outlined{
-            font-size: 30px;
-            /* padding: 10px; */
-        }
+       
         .symbol{
             border-radius: 50%;
             height: 38px;
@@ -74,18 +63,44 @@
         div a:hover{
             text-decoration: underline;
         }
+        .maindiv{
+            height: 420px;
+            width: 100%;
+            /* border: 1px solid black; */
+            background-color: white;
+            top: 50px;
+            
+        }
+          #google{
+            align-items: center;
+            justify-content: center;
+            height: 170px;
+            width: 100;
+            padding-left: auto;
+            padding-right: auto; 
+            padding-top: 170px;
+       }
+       #google img{
+        padding-right: auto;
+        padding-top: auto;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+       }
+
+       #google img:hover{
+        cursor: pointer;
+       }
         #maininput{
-        width: 60%;
+        justify-content: center;
+        width: 70%;
         height: 44px;
-        position: relative;
-        transform: translate3d(50deg,50deg);
         border-radius: 20px;
-        text-align: center;
-        /* margin-top: 30%; */
-        margin-left: 20%;
-        margin-right: 20%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
         border: none;
-        background-color: rgb(246, 241, 234);
+        background-color: whitesmoke;
         }
 
         #maininput:hover{
@@ -94,73 +109,37 @@
        }
        .inputdiv{
         display: flex;
-        height: 40px;
-        width: 80%;
-        position: relative;
-        margin-left: 100px;
-        margin-right: 90px;
-        padding: 20px;
-        flex-wrap: wrap;
-       }
-
-       #google{
-        height: 163px;
-        width: 400px;
-        /* margin-top: 70px; */
-        margin-left: 520px;
-        padding-left: auto;
-        padding-right: auto; 
-        padding-top: 35px;
-        margin-top: 30px;
-       }
-       #google img:hover{
-        cursor: pointer;
+        height: 50px;
+        width:100%;
+    
+    
+       } 
+       #Sinput{
+        width: 100%;
+        height: 50px;
        }
        #search{
-        position: absolute;
-        margin-left: 185px;
-        padding-left: 60px;
-        padding-top: 7px;
-        height: 35px;
-        width: 35px;
-        font-size: 28px;
+        /* display: inline-flex; */
+        /* margin-left: 60px; */
+        padding-left: 50px;
        }
-       #mic{
-        color: rgb(241, 21, 127);
-        position: absolute;
-        padding-left: 845px;
-        padding-top: 11px;
-        font-size: 23px;
-        display: inline-block;  
-       }
-       #mic:hover{
-        cursor: progress;
-       }
-       #lens{
-        height: 31px;
-        width: 31px;
-        color: rgb(241, 21, 127);
-        position: absolute;
-        float: right;
-        padding-left: 876px;
-        padding-top: 7px;
-        font-size: 8px;
 
-       }
-       .langdiv{
+        .langdiv{
         text-align: center;
+        height: 300px;
+        width: 100%;
        }
 
        .bottombutton1{
-        height: 30px;
-        width: 120px;
+        height: 35px;
+        width: 220px;
     
        }
        .bottombutton2{
-        height:30px;
-        width: 120px;
+        height:35px;
+        width: 220px;
     
-       }
+       } 
 
 
     </style>
@@ -172,40 +151,33 @@
                 <div id="gmail"><a href="">Gmail</a></div>
                 <div id="images"><a href="">Images</a></div>
                 <div id="apps"><button class="material-symbols-outlined">apps</button>
-                <!-- <d class="appsimg" id="docs"><a href="" target="_blank">
-                    <img src="https://e7.pngegg.com/pngimages/205/953/png-clipart-google-docs-mobile-app-application-software-app-store-google-blue-angle-thumbnail.png" alt=""></a></div> -->
-                <!-- <div class="appsimg" id="drive"><a href="" target="_blank">
-                    <img src="https://e7.pngegg.com/pngimages/706/170/png-clipart-google-drive-full-logo-tech-companies.png" alt=""></a></div> -->
-                <!-- <div class="appsimg" id="photo">
-                    <a href="" target="_blank">
-                    <img src="https://w7.pngwing.com/pngs/269/895/png-transparent-google-logo-photos-new-google-new-logos-icon.png" alt=""></a></div> -->
-                <!-- <div class="appsimg" id="mail">
-                    <a href="" target="_blank">
-                    <img src="https://w7.pngwing.com/pngs/608/931/png-transparent-gmail-new-logo-icon.png" alt=""></a></div> -->
-                <!-- <div class="appsimg"><a href="" target="_blank">
-                    <img src="" alt=""></a></div> -->
-                <!-- <div class="appsimg">
-                    <a href="" target="_blank">
-                    <img src="" alt=""></a></div> -->
                 </div>
                 <div id="s"><button class="symbol">S</button></div>
             </div>
         </nav>
+
         <div class="maindiv">
             <div id="google"><img src="https://www.pngall.com/wp-content/uploads/5/Google-Logo-PNG-Free-Image.png" alt="google" height="180px" width="360px">
             </div>
             <div class="inputdiv">
-            <input id="maininput"type="search" placeholder="search Google or type a URL" ></span>
-            <span class="material-symbols-outlined" id="search">search</span>
-            <span id="mic"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#4285F4" d="M12 15c1.66 0 2.99-1.34 2.99-3L15 5c0-1.66-1.34-3-3-3S9 3.34 9 5v7c0 1.66 1.34 3 3 3z"/><path fill="#34A853" d="M11 18.92h2V22h-2z"/><path fill="#F4B400" d="M7 12H5c0 1.93.78 3.68 2.05 4.95l1.41-1.41C7.56 14.63 7 13.38 7 12z"/><path fill="#EA4335" d="M12 17c-1.38 0-2.63-.56-3.54-1.47l-1.41 1.41A6.99 6.99 0 0 0 12.01 19c3.87 0 6.98-3.14 6.98-7h-2c0 2.76-2.23 5-4.99 5z"/></svg></span>
-            <img src="https://w7.pngwing.com/pngs/111/660/png-transparent-google-lens-logo-icon-thumbnail.png" alt="lens" height="20px" width="20px" id="lens"></span>
-            </div>
+            <div id="search"><button id="bsearch"><img src="https://www.freeiconspng.com/thumbs/search-icon-png/search-icon-png-1.png" alt="search" height="35px" width="30px"></button></div>
+            <div id="Sinput"><input id="maininput"type="search" placeholder="search Google or type a URL" ></div>
+            <!-- <span class="micnlens"> -->
+            <!-- <span id="Smic"><button id="bbutton"><img src="https://e7.pngegg.com/pngimages/992/709/png-clipart-multicolored-microphone-microphone-icon-cute-microphone-icon-electronics-camera-icon-thumbnail.png" alt="mic" height="30px" width="28px" id="mic"></button></span> -->
+            <!-- <span id="Slens"><button id="blens"><img src="https://w7.pngwing.com/pngs/111/660/png-transparent-google-lens-logo-icon-thumbnail.png" alt="lens" height="32px" width="30px" id="lens"></button></span> -->
+            <!-- </span>   -->
+         </div>
         </div>
-        <div class="langdiv">
+       <div class="langdiv">
             <button class="bottombutton1"><span>google Search</span></button>
             <button class="bottombutton2"><span>I'm feeling lucky</span></button>
+
             <a href=""></a>
-        </div>>
+        </div>
+        <footer>
+            <div>India</div>
+            <div></div>
+        </footer>
         
 </body>
 </html>
