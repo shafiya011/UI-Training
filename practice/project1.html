@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project-1</title>
+    <!-- <link rel="html" href=""> -->
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(3, 57, 69);
+        }
+        .navbar{
+            /* border: 1px solid black; */
+            height: 60px;
+            /* width: 100%; */
+            /* background-color: rgb(2, 2, 71); */
+            padding-left: 500px;
+            padding-top: 20px;  
+        
+        }
+        #main-image{
+            box-shadow: 1px 8px 10px rgb(1, 21, 26);
+        }
+        .navspan{
+            padding: 30px;
+            font-size: 18px;
+           
+        }
+        a{
+            color: beige;
+            text-decoration: none;
+        }
+        nav a:hover{
+            color: rgb(228, 47, 167);
+        }
+        h2{
+            margin-top: 10px;
+            text-align: center;
+            font-size: 50px;
+            font-weight: 500;
+            color: rgb(242, 247, 242);
+        }
+       #main-subjects-div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 25px; 
+        box-shadow: 5px;
+       }
+       p{
+        font-size: 20px;
+        text-align: center;
+       }
+       #main-subjects-div img{
+        padding: 20px;
+       }
+       #main-subjects-div img:hover{
+        height: 450px;
+        width: 375px;
+        box-shadow: 3px 3px 10px rgb(41, 38, 38);
+       }
+      #main-subjects-div p:hover{
+        color: rgb(245, 236, 236);
+        font-weight: 600;
+       }
+       #contact{
+        height: 300px;
+        width: 100%;
+        background-color: rgb(3, 3, 48);
+        color: aliceblue;
+       }
+       #contact summary{
+        font-size: 20px;
+        padding: 30px;
+        text-align: center;
+        margin-top: 15px;
+
+       }
+       #contact h3{
+        text-align: center;
+        padding: 15px;
+        font-size: 25px;
+        /* padding-top: 10px; */
+       }
+       #about{
+        height: 600px;
+        width: 100%;
+        background-color: rgb(4, 72, 99);
+       }
+        .demovdo h3{
+          text-align: center;
+          font-size: 40px;
+          margin-bottom: 40px;
+          padding-top: 15px;
+          color: white;
+          text-shadow: 5px black;
+        }
+        .demovdo p{
+            text-align: center;
+            font-size: 35px;
+            padding: 15px;
+            margin-bottom: 10px;
+            font-weight: 800;
+            word-spacing: 7px;
+            /* color-scheme:inherit; */
+            color: rgb(243, 209, 165);
+            
+        }
+        #video{
+            margin-left: 400px;
+            box-shadow:  13px 8px 35px black;
+            border-radius: 15px;
+            /* background-color: 1px solid black; */
+            
+        }
+        
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <span class="navspan" id="subjects"> <a href="#mainhead">Subjects </a></span>
+            <span class="navspan" id="About"> <a href="#about">About </a></span>
+            <span class="navspan" id="login"><a href="/shafiya011/src/forms.html" target="_blank"> login/Signup </a></span>
+            <span class="navspan" id="contacts"> <a href="#contact">contacts </a></span>
+        </nav>
+    </header>
+    <main>
+        <div id="main-image">
+            <img src="https://c4.wallpaperflare.com/wallpaper/91/238/382/albert-einstein-quote-wallpaper-preview.jpg" height="570px" width="100%" alt="einsteins_img">
+            
+        </div>
+        <div id="mainhead">
+            <h2>Explore your Stream!!</h2>
+        </div>
+
+        <div id="main-subjects-div">
+            <div id="science">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzmo50X2tydIbPFpJAZtfMfPLcDIML2ZkS5A&usqp=CAU" alt="science"  height="380px"; width="320px" >
+                <p>Science</p>
+            </div>
+            <div id="pyhton">
+                <img src="https://courseapproach.com/wp-content/uploads/2022/11/python-for-data-scince.jpg" alt="python" height="380px"; width="320px" >
+                <p>Python</p>
+            </div>
+            <div id="iot">
+                <img src="https://static.vecteezy.com/system/resources/previews/005/549/899/non_2x/futuristic-sci-fi-glowing-hud-circle-element-abstract-hi-tech-background-hologram-particle-of-head-up-display-interface-virtual-reality-technology-of-computer-cyber-machine-and-engineering-vector.jpg" alt="" height="380px"; width="320px" >
+                <p>IOT</p>
+            </div> <br>
+            <div id="maths">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTWXObQj6N_unl9HK1amGEj9iQO_22CADj4A&usqp=CAU" alt="maths" height="380px"; width="320px" >
+                <p>Maths</p>
+            </div>
+            <div id="robotics">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd3l2Ka-mxbWypzQ5accTHOEHwcMlYUNFGLw&usqp=CAU" alt="robotics" height="380px"; width="320px" >
+                <p>Robotics</p>
+            </div>
+            <div id="artsandhumanity">
+                <img src="https://cdn.w600.comps.canstockphoto.com/arts-and-science-eps-vectors_csp84390735.jpg" alt="arts and humanity" height="380px"; width="320px" >
+                <p>Arts And Science </p> 
+            </div>
+            <div id="buisnessstrat">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGoXOV5x0wHJjclVRv7wg2bc7okh4w0w7z5Q&usqp=CAU" alt="buisness strategy" height="380px"; width="320px" >
+                <p>Buisness Strategies</p>
+            </div>
+            <div id="communication">
+                <img src="https://www.friendshipcircle.org/ResouresImage/art-of-language-624x413.jpg" alt="communication" height="380px"; width="320px" >
+                <p>Communication</p>
+            </div>
+            <div id="physics">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYobxLQVLxrDd1gb68l6r3qWgMYofbT0lUyw&usqp=CAU" alt="physics" height="380px"; width="320px" >
+                <p>Physics</p> 
+            </div>
+            <div id="buildingsci">
+                <img src="https://cdnassets.hw.net/dims4/GG/89ddd79/2147483647/thumbnail/300x200%3E/quality/90/?url=https%3A%2F%2Fcdnassets.hw.net%2F5d%2Fa4%2F8767f8aa4227aa7585951f37e5e2%2Fadobestock-81895775-small.jpg" alt="buildingsci" height="380px"; width="340px" >
+                <p>Building Science</p>
+            </div>
+            <div id="tamil">
+                <img src="https://www.ancient-origins.net/sites/default/files/field/image/Sangam-Literature.jpg" alt="tamil" height="380px"; width="320px" >
+                <p>Literature</p>
+            </div>
+            <div id="social">
+                <img src="https://odishabytes.com/wp-content/uploads/2020/07/social-science1.png" alt="social" height="380px"; width="320px" >
+                <p>Socila Sciences</p>
+            </div>
+        </div>
+    </main>
+    <div class="demovdo" id="about">
+        <h3>About</h3>
+        <p>Do watch the video to knw more about us!!!</p>
+        <video controls id="video">
+        <source src="https://rr3---sn-h5576nss.googlevideo.com/videoplayback?expire=1687185787&ei=GxWQZKLeKKeLx_APr4KC8As&ip=98.159.234.144&id=o-AAEv2b_0HRo7PwRfJDiM_0avYFMVz4-K0-GTReit6CII&itag=18&source=youtube&requiressl=yes&pcm2=yes&spc=qEK7BwUqH6ZZvabQQp5ae2ZIJyaqTdA1MEq0QVe8Fw&vprv=1&svpuc=1&mime=video%2Fmp4&ns=jYPb3__qiInUE_iWHAsnnw0N&cnr=14&ratebypass=yes&dur=169.668&lmt=1657645868817508&fexp=24007246,24350018,24363392&beids=24350018&c=WEB&txp=1318224&n=7BPUdE5n9j-SPQ&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cpcm2%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Cns%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AOq0QJ8wRAIgDv6EL-faOesmK9aBlJcEl0gbJVSrUMNPIEcZuvwUqpECIAeFkyyp17fXhXqxBM0aeO5ySewmyO9Frkb-TZkgz-0l&rm=sn-aigesy7z&req_id=d527e7b78f0ca3ee&ipbypass=yes&redirect_counter=2&cm2rm=sn-i5uif5t-h55s7e&cms_redirect=yes&cmsv=e&mh=9p&mip=115.97.66.154&mm=30&mn=sn-h5576nss&ms=nxu&mt=1687163806&mv=m&mvi=3&pl=24&lsparams=ipbypass,mh,mip,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRQIgNMLJDDfVAVy7M1heuIjK2ZCXzkismHLNe9jo6451MxwCIQC87fvQ0ZjjVx7B5Ty03BBxl7be2PxqM1AsaZVQ8qTTYg%3D%3D" type="video/mp4" >
+    </video>
+
+    </div>
+    <footer>
+        <div id="contact">
+            <h3>Contact For more Details!</h3>
+        <details>
+            <summary>contact details</summary>
+            <p>0037663737383883993</p>
+        </details>
+        <details>
+            <summary>Adresss</summary>
+            <p>Experience.com , akshaya vibygor</p>
+        </details>
+    </div>
+    </footer>
+</body>
+</html>
