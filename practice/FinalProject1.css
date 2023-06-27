@@ -1,236 +1,361 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
-#navbar{
+header {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  background-color: white;
+}
+#navbar {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+}
+#demo a {
+  text-decoration: none;
+  color: black;
+}
+#demolistdropdown {
+  border-top: 2px solid greenyellow;
+  background-color: white;
+  box-shadow: 1px 2px 5px grey;
+  display: none;
+}
+#demolist ul li {
+  /* border: 1px solid black; */
+  font-size: 12px;
+  text-decoration: none;
+  list-style-type: none;
+}
+#demolistdropdown:hover {
+  display: visible;
+}
+
+#navbar img {
+  height: 45px;
+  width: 42px;
+  padding: auto;
+  margin-left: 30px;
+  margin-top: 10px;
+  align-items: center;
+}
+#navdiv {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 18px;
+  top: 0;
+  right: 0;
+}
+#demopagesdiv {
+  padding: 8px;
+  font-size: 16px;
+}
+#watchvideo {
+  padding: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+#blocks {
+  padding: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+#buynow {
+  height: 40px;
+  width: 120px;
+  background-color: rgb(115, 220, 115);
+  padding: 10px;
+  border: none;
+}
+button:hover {
+  box-shadow: 4px 4px 5px grey;
+}
+#mainsection {
+  height: 100vh;
+  width: 100vw;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: url(https://edyoda.s3.ap-south-1.amazonaws.com/public/landing-background.png);
+}
+#maincontent h1 {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 55px;
+  width: 100%;
+  /* max-width: 1100px; */
+  font-weight: 500;
+  letter-spacing: 8.8px;
+  line-height: 1.2;
+  text-align: center;
+  /* position: relative; */
+}
+#maincontent p {
+  padding-top: 50px;
+  text-align: center;
+  font-size: 18px;
+  word-spacing: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  color: grey;
+}
+#section2 {
+  width: 100%;
+  height: 100%;
+  /* border:1px solid blue; */
+}
+#stepsdiv {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  height: 500px;
+  /* border: 1px solid green; */
+}
+#step1 {
+  display: grid;
+  grid-template-rows: 20% 10% 70%;
+  align-items: center;
+  color: white;
+  background-color: #5acda6;
+}
+#step2 {
+  display: grid;
+  grid-template-rows: 20% 10% 70%;
+  align-items: center;
+  color: white;
+  background-color: #91ac41;
+}
+#step3 {
+  /* height: 500px; */
+  display: grid;
+  grid-template-rows: 20% 10% 70%;
+  align-items: center;
+  color: white;
+  background-color: #e4b476;
+}
+#step4 {
+  /* height: 500px; */
+  display: grid;
+  grid-template-rows: 20% 10% 70%;
+  align-items: center;
+  word-spacing: 5px;
+  color: white;
+  font-size: 20px;
+  background-color: #f69dad;
+}
+#step1icon {
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  font-size: 80px;
+  margin-bottom: 0;
+}
+#step1icon:hover {
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  font-size: 95px;
+  margin-bottom: 0;
+}
+#step2icon {
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  font-size: 80px;
+  margin-bottom: 0;
+}
+#step2icon:hover {
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  font-size: 95px;
+  margin-bottom: 0;
+}
+#step3icon {
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  font-size: 80px;
+  margin-bottom: 0;
+}
+#step3icon:hover {
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  font-size: 95px;
+  margin-bottom: 0;
+}
+#step4icon {
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  font-size: 80px;
+  margin-bottom: 0;
+}
+#step4icon:hover {
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  font-size: 95px;
+  margin-bottom: 0;
+}
+#stepsdiv p {
+  text-align: start;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+  margin-top: 0;
+  padding: 25px;
+}
+#stepsdiv h3 {
+  text-align: center;
+  font-size: 28px;
+  margin-top: 15px;
+}
+#section3 {
+  /* border: 1px solid blue; */
+  /* height: 100%; */
+  width: 100%;
+  /* margin-top: 100px;  */
+  padding: 30px;
+  background-color: #f7eee2;
+  position: relative;
+}
+#sec3italics {
+  color: #91ac41;
+  font-size: 24px;
+  font-family: "Caveat", cursive;
+  margin: 0;
+  /* margin-top: 35px; */
+  text-align: center;
+}
+#section3 h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 44px;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 20px;
+}
+#sec3description {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #4f4f56;
+  letter-spacing: 0.5px;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+.storecontentmain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.storecontent {
+  border: 1px solid blue;
+  align-items: center;
+  justify-content: center;
+  text-align: centre;
+}
+.storecontent h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+  padding: 35px;
+}
+.sec3icons i {
+  background-color: #e3b375;
+  font-size: 55px;
+  padding: 48px;
+  border-radius: 80px;
+}
+.sec3icons {
+  padding: 30px;
+  text-align: center;
+}
+.sec3icons i:hover {
+  font-size: 80px;
+}
+.storecontent p {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.6px;
+  font-weight: 500;
+  color: #4e4e5b;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 10px;
+}
+
+#sec4italics {
+  color: #91ac41;
+  font-size: 24px;
+  font-family: "Caveat", cursive;
+  margin: 0;
+  margin-top: 35px;
+  text-align: center;
+}
+.section4 h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 44px;
+  font-weight: 600;
+  text-align: center;
+  padding: 20px;
+}
+#sec4description {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #8b8b99;
+  letter-spacing: 0.5px;
+  text-align: center;
+  margin-top: 10px;
+}
+.maintestimonial{
+    display: grid;
+    grid-template-columns: 36% 28% 36%;
+    grid-template-rows: 100% 100% 100%;
+    gap: 15px;
+    width: 100%;
+}
+.testimonials{
     border: 1px solid black;
-    display: flex;
-    justify-content: space-between;
-}
-#demo a{
-    text-decoration: none;
-    color: black;
-}
-#demolistdropdown{
-    border-top: 2px solid greenyellow;
-    background-color: white;
-    box-shadow: 1px 2px 5px grey;
-    display: none;
-}
- #demolist ul li {
-    /* border: 1px solid black; */
-    font-size: 12px;
-    text-decoration: none;
-    list-style-type: none;
-} 
-#demolistdropdown:hover{
-    display: visible;
 }
 
-#navbar img{
-    height: 45px;
-    width: 42px;
-    padding: auto;
-    margin-left: 30px;
-    margin-top: 10px;
-    align-items: center;
-}
-#navdiv{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 18px;
-    top: 0;
-    right: 0;
-}
-#demopagesdiv{
-    padding: 8px;
-    font-size: 16px;
+/* Testimonial Card:
+Background Color: #f5f6fb;
+Top-left Border Radius: 45px;
+Bottom-left Border Radius: 45px;
+Bottom-right Border Radius: 45px; */
 
+.testimonial img{
+Border-Radius: 50%;
+Width: 80px;
 }
-#watchvideo{
-    padding: 8px;
-    font-size: 16px;
-    cursor: pointer;
-
+.testimony_message{
+font-Family: 'Poppins', sans-serif;
+font-Size: 14px;
+Letter-Spacing: 0.5px;
+Font-Style: Italic;
+Color: #8b8b99;
 }
-#blocks{
-    padding: 8px;
-    font-size: 16px;
-    cursor: pointer;
-
+.testimonial h3{
+Font-Family: 'Poppins', sans-serif;
+font-Size: 16px;
+font-weight: 600;
 }
-#buynow{
-    height:40px;
-    width: 120px;
-    background-color: rgb(115, 220, 115);
-    padding: 10px;
-    border: none;
-
-}
-button:hover{
-    box-shadow: 4px 4px 5px grey;
-}
-#mainsection{
-    height: 100vh;
-    width: 100vw;
-    /* border: 1px solid red; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    background-image: url(https://edyoda.s3.ap-south-1.amazonaws.com/public/landing-background.png);
-}
-#maincontent h1{
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 55px;
-    width: 100%;
-    /* max-width: 1100px; */
-    font-weight: 500;
-    letter-spacing: 8.8px;
-    line-height: 1.2;
-    text-align: center;
-    /* position: relative; */
-
-}
-#maincontent p{
-    padding-top: 50px;
-    text-align: center;
-    font-size: 18px;
-    word-spacing: 2px; 
-    margin-left: auto;
-    margin-right: auto;
-    color: grey;
-}
-#section2{
-    width: 100%;
-    height: 100%;
-    /* border:1px solid blue; */
-}
-#stepsdiv{
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    height: 500px;
-    /* border: 1px solid green; */
-}
-#step1{
-
-    display: grid;
-    grid-template-rows: 20% 10% 70%;
-    align-items: center;
-    color: white;
-    background-color: #5acda6;
-    
-}
-#step2{
-    display: grid;
-    grid-template-rows: 20% 10% 70%;
-    align-items: center;
-    color: white;
-    background-color: #91ac41;
-}
-#step3{
-    /* height: 500px; */
-    display: grid;
-    grid-template-rows: 20% 10% 70%;
-    align-items: center;
-    color: white;
-    background-color:#e4b476;;
-}
-#step4{
-    /* height: 500px; */
-    display: grid;
-    grid-template-rows: 20% 10% 70%;
-    align-items: center;
-    word-spacing: 5px;
-    color: white;
-    font-size: 20px;
-    background-color:#f69dad;
-
-}
-#step1icon{
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    font-size: 80px;
-    margin-bottom: 0;
-}
-#step1icon:hover{
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    font-size: 95px;
-    margin-bottom: 0;
-}
-#step2icon{
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    font-size: 80px;
-    margin-bottom: 0;
-}
-#step2icon:hover{
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    font-size: 95px;
-    margin-bottom: 0;
-}
-#step3icon{
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    font-size: 80px;
-    margin-bottom: 0;
-}
-#step3icon:hover{
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    font-size: 95px;
-    margin-bottom: 0;
-}
-#step4icon{
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    font-size: 80px;
-    margin-bottom: 0;
-}
-#step4icon:hover{
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    font-size: 95px;
-    margin-bottom: 0;
-}
-#stepsdiv p{
-    text-align: start;
-    font-size: 16px;
-    letter-spacing: 0.5px;
-    line-height: 1.6;
-    margin-top: 0; 
-    padding :25px;
-
-}
-#stepsdiv h3{
-    text-align: center;
-    font-size: 28px;
-    margin-top: 15px;
-}
-#section3{
-    /* border: 1px solid blue; */
-    height: 100%;
-    width: 100%;
-    background-color:lightyellow;
-    /* position: relative; */
-
-}
-#section3 h5{
-    font-style: italic;
-    
-    color: green;
+.designation{
+Font-Family: 'Poppins', sans-serif;
+font-Size: 12px;
+Color: #8b8b99;
+Font-Style: Italic;
 }
