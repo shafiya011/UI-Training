@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "poppins", sans-serif;
 }
 header {
   position: fixed;
@@ -21,27 +21,45 @@ header {
   text-decoration: none;
   color: black;
 }
-#demolistdropdown {
-  background-color: white;
-  box-shadow: 1px 2px 5px grey;
-  display: none;
-  border-top: #91ac41;
+#demo i {
+  padding-left: 5px;
 }
-#demolistdropdown ul li{
-  text-decoration: underline;
-  text-underline-position: below;
-  list-style-type: none;
-  list-style: none;
-  align-items: center;
-  padding: 7px;
+#blocks i {
+  padding-left: 5px;
+}
+#demolistdropdown {
+  width: 190px;
+  border-top: 2px solid rgb(170, 210, 54);
+  padding: 20px;
+  position: absolute;
+  background-color: white;
+  margin-top: 5px;
+  right: 377px;
+  border-radius: 3px;
+  text-align: start;
+  display: none;
+  /* text-align: start; */
+}
+#demolistdropdown a {
+  padding: 5px;
+  display: block;
+  text-decoration: none;
+  border-bottom: 1px solid #ccc;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: start;
+}
+#demolistdropdown a:last-of-type {
+  text-decoration: none;
+  border-bottom: none;
 }
 
 #demo:hover #demolistdropdown {
   display: block;
   position: absolute;
-  border-top: #91ac41;
-  height: 100px;
-  width: 150px;
+  /* border-top:3px solid #91ac41; */
+  /* height: 100px; */
+  /* width: 150px; */
 }
 
 #navbar img {
@@ -62,24 +80,32 @@ header {
 }
 #demopagesdiv {
   padding: 8px;
-  font-size: 16px;
+  font-size: 14px;
+  margin-right: 22px;
+  font-weight: 600;
 }
 #watchvideo {
   padding: 8px;
-  font-size: 16px;
+  font-size: 14px;
   cursor: pointer;
+  margin-right: 22px;
+  font-weight: 600;
 }
 #blocks {
   padding: 8px;
-  font-size: 16px;
+  font-size: 14px;
   cursor: pointer;
+  margin-right: 20px;
+  font-weight: 600;
 }
 #buynow {
-  height: 40px;
-  width: 120px;
-  background-color: rgb(115, 220, 115);
-  padding: 10px;
+  /* height: 40px; */
+  /* width: 120px; */
+  background-color: rgb(170, 210, 54);
+  padding: 8px 30px;
   border: none;
+  border-radius: 7px;
+  color: white;
 }
 button:hover {
   box-shadow: 4px 4px 5px grey;
@@ -94,27 +120,34 @@ button:hover {
   position: relative;
   background-image: url(https://edyoda.s3.ap-south-1.amazonaws.com/public/landing-background.png);
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 #maincontent h1 {
   margin-left: auto;
   margin-right: auto;
+  font-family: "Poppins", sans-serif;
   width: 100%;
   max-width: 1100px;
-    font-size: 45px;
-    font-weight: 600;
-    letter-spacing: 8.8px;
-    line-height: 1.2;
-    text-align: center;
-    /* margin: 0; */
+  font-size: 44px;
+  font-weight: 600;
+  word-spacing: 3px;
+  letter-spacing: 8.8px;
+  line-height: 1.2;
+  text-align: center;
+  /* margin: 0; */
 }
 #maincontent p {
-  padding-top: 50px;
+  padding-top: 40px;
   text-align: center;
-  font-size: 18px;
+  font-size: 14px;
+  font-weight: 200;
+  letter-spacing: 0.5px;
   word-spacing: 2px;
   margin-left: auto;
   margin-right: auto;
-  color: rgb(79, 74, 74);
+  color: #8b8b99;
+  max-width: 1100px;
 }
 #section2 {
   width: 100%;
@@ -158,7 +191,7 @@ button:hover {
   background-color: #f69dad;
   text-align: center;
 }
-#step1icon {
+.stepsicon {
   margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
@@ -166,53 +199,7 @@ button:hover {
   font-size: 80px;
   margin-bottom: 0;
 }
-#step1icon:hover {
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center;
-  font-size: 95px;
-  margin-bottom: 0;
-}
-#step2icon {
-  margin-top: 100px;
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center;
-  font-size: 80px;
-  margin-bottom: 0;
-}
-#step2icon:hover {
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center;
-  font-size: 95px;
-  margin-bottom: 0;
-}
-#step3icon {
-  margin-top: 100px;
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center;
-  font-size: 80px;
-  margin-bottom: 0;
-}
-#step3icon:hover {
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center;
-  font-size: 95px;
-  margin-bottom: 0;
-}
-#step4icon {
-  margin-top: 100px;
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center;
-  font-size: 80px;
-  margin-bottom: 0;
-
-}
-#step4icon:hover {
+.stepsicon:hover {
   margin-left: auto;
   margin-right: auto;
   align-items: center;
@@ -302,7 +289,7 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius:60px;
+  border-radius: 60px;
   /* margin-bottom: 30px; */
 }
 .sec3icons i:hover {
@@ -314,7 +301,7 @@ button:hover {
   letter-spacing: 0.6px;
   font-weight: 600;
   color: #66666d;
-  margin:15px 0px;
+  margin: 15px 0px;
   text-align: center;
   padding: 10px;
 }
@@ -359,7 +346,6 @@ button:hover {
   align-items: center;
   width: 100%;
   padding: 40px 200px;
-  
 }
 .testimonial {
   background-color: #f5f6fb;
@@ -369,7 +355,6 @@ button:hover {
   text-align: center;
   padding: 30px;
   margin: 15px;
- 
 }
 .testimonial > div {
   text-align: center;
@@ -400,7 +385,7 @@ button:hover {
   /* padding-top: 20px; */
   margin-top: 30px;
 }
-.testimonial:hover{
+.testimonial:hover {
   transform: scale(1.1);
   box-shadow: 3px 3px 5px grey;
 }
@@ -420,25 +405,23 @@ button:hover {
 }
 #Strawberry {
   display: inline-block;
-  width: 67%;
+  /* width: 67%; */
   margin: 0px;
- 
 }
-#strawberry img{
+#strawberry img {
   width: 100%;
-  /* height: 100vh; */
 }
 
 #rightsection {
   display: inline-block;
   width: 33%;
   background-image: url(https://edyoda.s3.ap-south-1.amazonaws.com/public/strawberry-white.png);
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
   text-align: start;
 }
-#rightseccontent{
+#rightseccontent {
   margin: 120px;
 }
 #rightseccontent h3 {
@@ -452,7 +435,7 @@ button:hover {
 #rightseccontent p {
   color: #8b8b99;
   font-size: 16px;
-  margin:0;
+  margin: 0;
   letter-spacing: 1px;
   line-height: 1.7;
   text-align: start;
@@ -462,10 +445,10 @@ button:hover {
   display: block;
   border: none;
   /* height: 55px; */
-  width: 100%
+  width: 100%;
   text-align: center;
   margin-top: 45px;
-  padding:12px;
+  padding: 12px;
   font-size: 18px;
 }
 #rightsection button {
@@ -492,7 +475,7 @@ button:hover {
   font-size: 14px;
   letter-spacing: 2px;
   padding-top: 5px;
-  height: 42px;
+  /* height: 42px; */
   width: 147px;
 }
 .statisticsdiv h3 {
@@ -503,7 +486,7 @@ button:hover {
   display: flex;
   justify-content: space-evenly;
 }
-.vediosection{
+.vediosection {
   width: 100%;
   text-align: center;
 }
@@ -547,7 +530,6 @@ button:hover {
   padding-right: 50px;
   width: 100%;
   /* display: block; */
-
 }
 
 .adresssection {
@@ -558,15 +540,13 @@ button:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding:100px 0px;
- 
+  padding: 100px 0px;
 }
-.leftsec{
+.leftsec {
   width: 45%;
   /* padding: 0px 20px; */
-
 }
-.rightsec{
+.rightsec {
   width: 45%;
   /* padding: 0px 20px; */
 }
@@ -637,24 +617,23 @@ button:hover {
   margin-right: 16px;
   cursor: pointer;
   display: block;
-  
 }
-footer{
-background-color: rgb(49, 46, 46);
-color: white;
-height: 70px;
-width: 100%;
-text-align: center;
-padding: 30px;
+footer {
+  background-color: rgb(49, 46, 46);
+  color: white;
+  height: 70px;
+  width: 100%;
+  text-align: center;
+  padding: 30px;
 }
 
-@media (max-width: 900px){
- #section7{
+@media (max-width: 900px) {
+  #section7 {
     padding: 10px;
     box-sizing: border-box;
     width: 100%;
   }
-.adresssection {
+  .adresssection {
     width: 100%;
     /* height: 100%; */
     padding: 20px;
@@ -664,133 +643,161 @@ padding: 30px;
     flex-direction: column;
     box-sizing: border-box;
   }
-  #navdiv, #watchvideo, #blocks{
-    display:none;
+  #navdiv,
+  #watchvideo,
+  #blocks {
+    display: none;
   }
-  .storecontentmain{
+  .storecontentmain {
     display: flex;
-    flex-direction:column ;
+    flex-direction: column;
     width: 100%;
   }
   .storecontent {
-  width: 100%%;
-  align-items: center;
-  justify-content: center;
-  text-align: centre;
-  padding: 25px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: centre;
+    padding: 25px;
   }
-  .storecontent p{
+  .storecontent p {
     width: 100%;
     text-align: center;
   }
-  #section5{
+  #section5 {
     width: 100%;
     display: flex;
     flex-direction: column;
-    
   }
-  #strawberry{
+  #strawberry {
     width: 100%;
-    display: block;
+    display: inline-block;
   }
-  #strawberry img{
+  #strawberry img {
     /* height: 100%; */
     width: 100%;
     object-fit: contain;
     /* height: 100%; */
   }
 
-  #rightsection{
+  #rightsection {
     width: 100%;
     background-image: url(https://edyoda.s3.ap-south-1.amazonaws.com/public/strawberry-white.png);
     background-size: cover;
   }
-  .statisticsdiv{
+  .statisticsdiv {
     display: flex;
     flex-direction: column;
     width: 100%;
     justify-content: center;
     align-items: center;
   }
-  .section6{
+  .section6 {
     align-items: center;
   }
-  .stats{
+  .stats {
     padding: 30px 0px;
   }
-  #video{
+  #video {
     width: 100%;
   }
-  #video iframe{
+  #video iframe {
     width: 90%;
   }
-  .input-box{
+  .input-box {
     width: 100%;
     padding: 20px;
-
   }
-  .secdescription{
+  .secdescription {
     width: 100%;
-    height: 50px;
+    /* height: 50px; */
     margin: 40px 0px;
   }
-  .storename{
+  .storename {
     margin-top: 20px;
     padding-top: 90px;
   }
-  
-  #submit{
+
+  #submit {
     align-items: center;
   }
-  .maintestimonial{
+  .maintestimonial {
     width: 100%;
     display: block;
     /* align-items: center; */
   }
   .testimonial {
-  text-align: center;
+    width: 100%;
+    text-align: center;
+  
   }
-.testimonial_message{
-  width: 100%;
-}
-  #section2{
+  .testimonial_message {
+    width: 100%;
+    color: #29292d;
+  }
+  #section2 {
     width: 100%;
     text-align: center;
     margin: 0px;
     padding: 0px;
   }
 
-  #stepsdiv{
+  #stepsdiv {
     width: 100%;
-    display:block;
-    /* padding: ; */
+    display: block;
     margin: 0px;
-
   }
-  /* .steps{
+
+  .adresssection {
     width: 100%;
-  } */
-  .adresssection{
-    width: 100%;
-    display:flex;
+    display: flex;
     flex-direction: column;
   }
-  .sec3icons i{
+  .sec3icons i {
     background-color: #e3b375;
-  font-size: 40px;
-  text-align: center;
-  margin: 0px auto;
-  padding: 42px;
-  border-radius: 50%;
-  color: whitesmoke;
+    font-size: 40px;
+    text-align: center;
+    margin: 0px auto;
+    padding: 42px;
+    border-radius: 50%;
+    color: whitesmoke;
   }
-  .leftsec{
+  .leftsec {
     display: block;
     width: 100%;
   }
-  .rightsec{
+  .rightsec {
     display: block;
     width: 100%;
   }
-
+  .stepsicon {
+    margin: 0px;
+    padding-top: 70px;
+    /* margin-top: 30px; */
+  }
+  
+  #section3 {
+    padding: 0px;
+  }
+  .maintestimonial {
+    padding: 0px;
+    width: 100%;
+  }
+  .te
+  #mail {
+    text-align: start;
+    width: 100%;
+  }
+  #subscribe {
+    margin-top: 30px;
+  }
+  #rightseccontent {
+    width: 100%;
+    margin: 0px;
+    padding: 10px;
+  }
+  .stepsicon i:hover {
+    font-size: 100px;
+  
+  }
 }
