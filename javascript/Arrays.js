@@ -170,7 +170,17 @@ for(let i=0;i<p.length;i++){
  console.log(typeof(p1))
 
 //  arrasys part 2 question
+
+
+let arr = [1,'a',2,'b',3,'c',6,'d',7,'e',8,'f'];
+// let arr1=arr.reverse();console.log(arr1);
+let arr1=[]
+for (let i=0,m=arr.length-1;i<arr.length;i++,m--){
+arr1[i]=arr[m];
+}
+console.log(arr1)
  
+let 
 
  
  

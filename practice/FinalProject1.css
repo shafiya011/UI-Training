@@ -355,8 +355,8 @@ button:hover {
 }
 .maintestimonial {
   display: grid;
-  grid-template-columns: 36% 28% 36%;
-  gap: 25px;
+  grid-template-columns: 33% 33% 33%;
+  gap: 20px;
   justify-content: center;
   align-items: center;
   width: 100%;
