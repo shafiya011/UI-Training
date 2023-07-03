@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: "poppins", sans-serif;
 }
+body{
+  font-family: 'Poppins', sans-serif;
+}
 header {
   position: fixed;
   z-index: 10;
@@ -16,17 +19,38 @@ header {
   display: flex;
   justify-content: space-between;
   z-index: 10;
-  padding:20px;
+  padding: 0px 28px;
+  align-items: center;
+  height: 75px;
+
 }
+#navbar img {
+  height: 40px;
+  width: 40px;
+  padding: auto;
+  /* margin-left: 30px; */
+  /* margin-top: 10px; */
+  align-items: center;
+}
+#navdiv {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* padding: 18px; */
+  /* top: 0; */
+  /* right: 0; */
+ 
+}
+
 #demo a {
   text-decoration: none;
   color: black;
 }
 #demo i {
-  padding-left: 5px;
+  padding-left: 3px;
 }
 #blocks i {
-  padding-left: 5px;
+  padding-left: 3px;
 }
 #demolistdropdown {
   width: 190px;
@@ -63,50 +87,45 @@ header {
   /* width: 150px; */
 }
 
-#navbar img {
-  height: 40px;
-  width: 40px;
-  padding: auto;
-  margin-left: 30px;
-  margin-top: 10px;
-  align-items: center;
-}
-#navdiv {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  /* padding: 18px; */
-  top: 0;
-  right: 0;
-}
+
 #demopagesdiv {
   /* padding: 8px; */
   font-size: 14px;
-  margin-right: 24px;
+  margin-right: 23px;
   font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+
+
+
 }
 #watchvideo {
   /* padding: 8px; */
   font-size: 14px;
   cursor: pointer;
-  margin-right: 24px;
+  margin-right: 25px;
   font-weight: 600;
+  font-family: 'Poppins', sans-serif;
 }
 #blocks {
   /* padding: 8px; */
   font-size: 14px;
   cursor: pointer;
-  margin-right: 24px;
+  margin-right: 25px;
   font-weight: 600;
+  font-family: 'Poppins', sans-serif;
 }
 #buynow {
   /* height: 40px; */
   /* width: 120px; */
   background-color: rgb(170, 210, 54);
-  padding: 6px 31px;
+  padding: 7px 34px;
   border: none;
-  border-radius: 5px;
+  font-size: 12px;
+  border-radius: 4px;
   color: white;
+  font-weight: 800;
+  margin-right: 16px;
+  font-family: 'Poppins', sans-serif;
 }
 button:hover {
   box-shadow: 4px 4px 5px grey;
@@ -122,31 +141,32 @@ button:hover {
   background-image: url(https://edyoda.s3.ap-south-1.amazonaws.com/public/landing-background.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: 100% 142%;
 }
 #maincontent h1 {
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
   font-family: "Poppins", sans-serif;
   width: 100%;
   max-width: 1100px;
   font-size: 44px;
   font-weight: 600;
-  word-spacing: 3px;
+  /* word-spacing: 3px; */
   letter-spacing: 8.8px;
   line-height: 1.2;
   text-align: center;
   /* margin: 0; */
 }
 #maincontent p {
-  padding-top: 40px;
+  padding-top: 25px;
   text-align: center;
   font-size: 14px;
-  font-weight: 200;
+  font-weight: 400;
+  margin: 14px 0px;
   letter-spacing: 0.5px;
-  word-spacing: 2px;
-  margin-left: auto;
-  margin-right: auto;
+  /* word-spacing: 2px; */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
   color: #8b8b99;
   max-width: 1100px;
 }
@@ -158,49 +178,38 @@ button:hover {
 #stepsdiv {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
-  /* height: 600px; */
+  height: 580px;
+  text-align: center;
   /* border: 1px solid green; */
 }
-#step1 {
+.steps{
   word-spacing: 5px;
   font-size: 20px;
   color: white;
-  background-color: #5acda6;
   text-align: center;
+  padding: 101px 56px;
+}
+#step1 {
+  background-color: #5acda6;
 }
 #step2 {
-  word-spacing: 5px;
-  font-size: 20px;
-  color: white;
   background-color: #91ac41;
-  text-align: center;
 }
 #step3 {
-  word-spacing: 5px;
-  font-size: 20px;
-  color: white;
   background-color: #e4b476;
-  text-align: center;
 }
 #step4 {
-  /* height: 500px; */
-  /* display: grid; */
-  /* grid-template-rows: 35% 10% 55%; */
-  word-spacing: 5px;
-  color: white;
-  font-size: 20px;
   background-color: #f69dad;
-  text-align: center;
 }
 .stepsicon {
-  margin-top: 100px;
+  /* margin-top: 100px; */
   margin-left: auto;
   margin-right: auto;
   align-items: center;
-  font-size: 80px;
+  font-size: 90px;
   margin-bottom: 0;
 }
-.stepsicon:hover {
+.stepsicon  i:hover {
   margin-left: auto;
   margin-right: auto;
   align-items: center;
@@ -211,15 +220,16 @@ button:hover {
   text-align: center;
   letter-spacing: 0.5px;
   line-height: 1.6;
-  margin-top: 0;
-  padding: 50px;
+  word-spacing: 0.5px;
+  margin-bottom: 15px;
+  /* padding: 50px; */
   font-family: "Poppins", sans-serif;
   font-size: 14px;
 }
 #stepsdiv h3 {
   text-align: center;
-  font-size: 28px;
-  margin-top: 15px;
+  font-size: 24px;
+  margin: 10px 0px 20px 0px;
 }
 #section3 {
   width: 100%;
@@ -232,7 +242,7 @@ button:hover {
   font-size: 24px;
   font-family: "Caveat", cursive;
   margin: 0;
-  /* margin-top: 35px; */
+  margin-top: 35px;
   text-align: center;
 }
 #section3 h1 {
@@ -240,7 +250,7 @@ button:hover {
   font-size: 44px;
   font-weight: 600;
   text-align: center;
-  padding-top: 20px;
+  padding-bottom: 8px;
 }
 #sec3description {
   font-family: "Poppins", sans-serif;
@@ -249,21 +259,22 @@ button:hover {
   color: #84849e;
   letter-spacing: 1px;
   text-align: center;
-  padding: 20px;
+  /* padding: 20px; */
   margin-bottom: 50px;
 }
 .storecontentmain {
   display: flex;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
+  align-items: center;
   width: 100%;
-  padding: 0px 70px;
+  padding: 0px 85px;
 }
 .storecontent {
   /* border: 1px solid blue; */
   /* width: 320px; */
-  width: 25%;
-  align-items: center;
-  justify-content: center;
+  width: 24%;
+  /* align-items: center; */
+  /* justify-content: center; */
   text-align: centre;
   padding: 25px;
 }
@@ -337,7 +348,7 @@ button:hover {
   margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
-  /* max-width: 700px; */
+  max-width: 700px;
   margin: 0 auto;
   /* padding: 20px; */
   margin-bottom: 55px;
@@ -750,6 +761,7 @@ footer {
 
   #stepsdiv {
     width: 100%;
+    height: 100%;
     display: block;
     margin: 0px;
   }
