@@ -1,0 +1,36 @@
+#tabhead{
+    font-size: 22px;
+    text-align: center;
+}
+
+#form{
+    border: 1px solid black;
+    height: 600px;
+    width: 350px;
+    text-align: center;
+    padding: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightgray;
+}
+td{
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    /* border-collapse: separate; */
+}
+.inputs{
+    height: 30px;
+    width: 300px;
+    margin-top: 30px;
+    border: none;
+    border-bottom: 1px solid blue;
+    background-color: lightgray;
+}
+#submit{
+    padding: 5px;
+    text-align: center;
+    width: 80px;
+    margin-top: 30px;
+    cursor: pointer;
+}

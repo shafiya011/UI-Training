@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add and remove</title>
+    <script src="https://kit.fontawesome.com/467cf5515a.js" crossorigin="anonymous"></script>
+<style>
+    *{
+        margin: 0px;
+    }
+    #navbar{
+       border: 1px solid black; 
+       position: relative;
+    }
+    .hamburger{
+        font-size: 24px;
+    }
+     main{
+        height: 100vh;
+        width: 100%;
+        background-color: lightseagreen;
+        text-align: center;
+    }
+    #maindiv{
+        height: 100%;
+        width: 100%;
+        border: 1px solid black;
+        text-align: center;  
+    }
+    #sidebar{
+        height: 300px;
+        width: 150px;
+        position: absolute;
+        background-color: aliceblue;
+    } 
+    .hide{
+        display:none;
+    }
+    .show{ 
+        display: block;
+    }
+    .list-items{
+        list-style: none;
+        font-size: 18px;
+        padding: 0px;
+        margin-top: 20px;
+
+    }
+    .list-items li{
+        padding:20px;
+    }
+    .h1{
+        font-size: 40px;
+    }
+    .head{
+        font-size: 60px;
+    }
+    #btn{
+        cursor: pointer;
+        font-size: 16px;
+    }
+    
+
+</style>
+
+
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <button id="hamburg"><i class="fa-solid fa-bars"></i></button>
+            <div id="sidebar" class="hide show">
+                <ul class="list-items">
+                    <li>Home </li>
+                    <li>Contact</li>
+                    <li>About</li>
+                    <li>Contatct</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="maindiv">
+            <h1 id="heading" class="h1 head">welcome</h1>
+            <button id="btn" class="button">Click Here!</button>
+        </div>
+    </main>
+
+    <script src="./add&remove.js"></script>
+</body>
+</html>

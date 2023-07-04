@@ -12,7 +12,7 @@ setInterval(() => {
     var bgchange = initial%2 == 0 ? 'https://w0.peakpx.com/wallpaper/452/608/HD-wallpaper-sunset-sky-gradient-abstraction.jpg':'https://w0.peakpx.com/wallpaper/118/226/HD-wallpaper-sky-sunset-gradient-abstraction.jpg';
     bgimgchange.src=bgchange;
 
-    countdownElement.style.fontSize=initial * 100 +'%';
+    countdownElement.style.fontSize=initial * 50 +'px';
     console.log(countdownElement.style.fontSize);
     
     bgimgchange.style.width = initial * 10 + '%';

@@ -1,0 +1,24 @@
+body {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(241, 217, 186);
+}
+div{
+    width: 100%;
+    height:60vh ;
+    border: 1px transparent;
+}
+#head {
+  text-align: center;
+  translate: 0 50%;
+  font-size: 40px;
+}
+.buttons {
+  translate: 500px;
+  margin: 0px 20px 0px;
+  padding: 10px;
+  width: 100px;
+  cursor: pointer;
+  border-radius: 6px;
+  background-color:lightpink;
+}
