@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0px;box-sizing: border-box;
+}
+#mainsection{
+    width: 100%;
+    height: 100vh;
+    border: 1px solid black;
+    background-color: rgb(2, 2, 58)
+    /* background-image: linear-gradient(rgb(243, 180, 243),rgb(204, 135, 239),rgb(192, 224, 244)); */
+}
+#inputdiv{
+    /* border: 1px solid black; */
+    width: 50%;
+    height: 90vh;
+    margin: auto;
+    text-align: center;
+    padding-top:20px ;
+    border-radius: 15px;
+    box-shadow: 4px 4px 12px blue;
+    background-image: linear-gradient(rgb(243, 180, 243),rgb(204, 135, 239),rgb(192, 224, 244));
+}
+#inputfield{
+    height: 35px;
+    width:60%;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    /* background: transparent; */
+}
+#inputdiv button{
+    height: 35px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 25px 0px;
+    padding: 5px;
+    /* border: aliceblue; */
+}
+
+#listdiv{
+    /* border: 1px solid black;  */
+    width: 60%;
+    padding: auto;
+    margin: auto;
+    text-align: start;
+}
+#list{
+    /* margin: 20px; */
+    position: relative;
+    text-align: center;
+}
+#list li{
+    list-style: none;
+    /* display: inline-block; */
+    padding: 5px;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-right: 10px;
+    border-bottom:1px solid black;
+    position: relative;
+}
+ul li button{
+display: inline-block;
+margin-left: 20px;
+right: 0;
+margin-right: 0;
+/* position: absolute; */
+}
+
+/* li::after{
+    content: '\f1f8';
+    font-family: fontAwesome;
+    right: 0;
+    text-align: 0;
+    padding-left: 50px;
+    position: absolute;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    /* background-color: black; */
+    /* background-image: url(./unchecked.png);
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    left: 0px;
+    margin-left: 0; */
+/* } */
+/* ul li.checked{
+    text-decoration: line-through;
+} */
+/* ul li.checked::before{
+    background-image: url(./checked.png);
+} */
+
+
