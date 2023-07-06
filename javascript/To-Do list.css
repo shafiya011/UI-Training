@@ -28,7 +28,7 @@
     border: none;
     /* background: transparent; */
 }
-#inputdiv button{
+#btn{
     height: 35px;
     border-radius: 5px;
     cursor: pointer;
@@ -59,13 +59,20 @@
     border-bottom:1px solid black;
     position: relative;
 }
-ul li button{
+.deletebutton{
 display: inline-block;
-margin-left: 20px;
 right: 0;
 margin-right: 0;
-/* position: absolute; */
+mix-blend-mode: color-burn;
+position: absolute;
+/* border: none; */
+cursor: pointer;
 }
+button>img{
+    width: 20px;
+    height: 20px;
+}
+
 
 /* li::after{
     content: '\f1f8';
