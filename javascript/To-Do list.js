@@ -63,10 +63,9 @@ function addTask() {
       };
     
     removeElement.addEventListener("click", ()=>{
-      var firstElement = li.lastElementChild;
-      console.log(firstElement.firstElement)
-      list.remove(firstElement.firstElement);
-      // console.log(l_id);
+      var firstElement = list.firstElementChild;
+      firstElement.remove();
+      
     })
   }
   enterInput.value = "";
