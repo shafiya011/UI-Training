@@ -26,13 +26,14 @@
     border-radius: 5px;
     outline: none;
     border: none;
+    padding:10px;
     /* background: transparent; */
 }
 #btn{
     height: 35px;
     border-radius: 5px;
     cursor: pointer;
-    margin: 25px 0px;
+    margin: 25px 0px 5px 0px;
     padding: 5px;
     /* border: aliceblue; */
 }
@@ -43,63 +44,61 @@
     padding: auto;
     margin: auto;
     text-align: start;
+    /* display: inlinne-block; */
 }
 #list{
-    /* margin: 20px; */
+    margin-top: 20px;
     position: relative;
-    text-align: center;
+    /* text-align: center; */
+    /* display: flex; */
 }
 #list li{
     list-style: none;
+    /* display: flex; */
     /* display: inline-block; */
     padding: 5px;
     font-size: 18px;
-    margin-top: 5px;
+    margin-top: 15px;
     margin-right: 10px;
     border-bottom:1px solid black;
     position: relative;
 }
 .deletebutton{
-display: inline-block;
+display: inline;
 right: 0;
-margin-right: 0;
+/* margin-right: 0; */
 mix-blend-mode: color-burn;
 position: absolute;
-/* border: none; */
+border: none;
 cursor: pointer;
 }
 button>img{
     width: 20px;
     height: 20px;
 }
-
-
-/* li::after{
-    content: '\f1f8';
-    font-family: fontAwesome;
+.update{
+    /* height: 15px; */
+    /* width: 10px; */
+    /* position: absolute; */
     right: 0;
-    text-align: 0;
-    padding-left: 50px;
+    /* border-radius: 5px; */
+    cursor: pointer;
+    display: inline-block;
     position: absolute;
+    /* flex: 1; */
+    /* margin: 25px 0px; */
+    /* padding: 5px; */ 
+    
 }
-ul li::before{
-    content: '';
-    position: absolute;
-    height: 20px;
-    width: 20px;
-    /* background-color: black; */
-    /* background-image: url(./unchecked.png);
-    border-radius: 50%;
-    background-position: center;
-    background-size: cover;
-    left: 0px;
-    margin-left: 0; */
-/* } */
-/* ul li.checked{
-    text-decoration: line-through;
-} */
-/* ul li.checked::before{
-    background-image: url(./checked.png);
-} */
+#remove1{
+    height: 35px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px;
+    /* border: aliceblue; */
+}
+
+
+
 
 
