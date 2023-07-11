@@ -9,10 +9,12 @@
             width: 100%;
             height: 100%;
         }
-      #main {
+      #container{
         border: 1px solid black;
-        height: 100%;
+        /* height: 100%; */
         width: 100%;
+        /* display: flex; */
+        /* flex-wrap:wrap ; */
       }
       .main-div{
             width: 60%;
@@ -29,7 +31,7 @@
 
     <script>
 
- 
+      
        var container=document.createElement("div");
        container.id="container"
        document.body.appendChild(container);
@@ -44,9 +46,10 @@
             maindiv.className="main-div"
             container.appendChild(maindiv)
             console.log(maindiv);
-            var id=0;
-            maindiv.id="maindivid"+id;
-            id++;
+            maindiv.style.marginTop="10px"
+
+            maindiv.id="A"+data[i].id;
+            var allElem=document.getElementById("maindiv.id")
 
             let titleElem = document.createElement("h3");
             let title_h3 = document.createTextNode(data[i].title);
@@ -58,8 +61,6 @@
             image.width=90;
             image.length=100;
             maindiv.appendChild(image);
-        
-            // main.appendChild(maindiv);
 
             let desc = document.createElement("p");
             let desc_text = document.createTextNode(data[i].description);
@@ -72,18 +73,34 @@
             price.style.color="blue";
             price.style.fontSize="18px"
 
+            let input=document.createElement('input')
+            maindiv.appendChild(input);
+            let upd_button=document.createElement('button')
+            upd_button.innerText="update"
+            maindiv.appendChild(upd_button)
+
+
             var del_button=document.createElement("button");
             del_button.innerText="delete";
             maindiv.appendChild(del_button)
             del_button.style.backgroundColor= "lightpink";
             del_button.style.cursor="pointer"
 
-            del_button.onclick=(e)=>{
-                // e.closest.remove(maindiv)
-                maindiv.remove()
-                
-            
+            del_button.onclick=()=>{
+              // container.remove(div)
+              // del_button.parentElement.remove()
+
+                // maindiv.remove(e)
             }
+          // console.log(allElem);
+          if(input.value!=" "){
+          upd_button.onclick=()=>{
+            price.innerHTML=input.value
+
+          }}
+          // var a=[];
+          // a=fetch_data;
+          // console.log(a);
 
 
             container.appendChild(maindiv);
