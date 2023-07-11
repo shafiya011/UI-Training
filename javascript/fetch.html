@@ -49,6 +49,8 @@
             console.log(maindiv);
             maindiv.style.marginTop="10px"
 
+            var dataId=data[i].id;
+
             maindiv.id="A"+data[i].id;
             var allElem=document.getElementById("maindiv.id")
 
@@ -87,18 +89,24 @@
             del_button.style.backgroundColor= "lightpink";
             del_button.style.cursor="pointer"
 
-            del_button.onclick=()=>{
-              container.remove(maindiv)
-              // del_button.parentElement.remove()
-              singleElem.remove()
-
-                // maindiv.remove(e)
-            }
+            // del_button.onclick=()=>{
+            //   // container.remove(maindiv)
+            //   // del_button.parentElement.remove()
+            //   singleElem.remove()
+              // maindiv.remove(e)
+            // }
           // console.log(allElem);
+
+           del_button.onclick=()=>{
+            container.remove(maindiv)
+          fetch('https://fakestoreapi.com/products/'+dataId)
+            method:"delete";
+          }
+
+
           if(input.value!=" "){
           upd_button.onclick=()=>{
             price.innerHTML=input.value
-
           }}
           // var a=[];
           // a=fetch_data;

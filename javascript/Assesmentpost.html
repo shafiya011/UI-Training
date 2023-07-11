@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post</title>
+    <style>
+       #tabhead{
+    font-size: 22px;
+    text-align: center;
+}
+
+#form{
+    border: 1px solid black;
+    /* height: 600px; */
+    width: 350px;
+    text-align: center;
+    padding: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightgray;
+}
+td{
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    /* border-collapse: separate; */
+}
+.inputs{
+    height: 30px;
+    width: 300px;
+    margin-top: 30px;
+    border: none;
+    border-bottom: 1px solid blue;
+    background-color: lightgray;
+}
+#submit{
+    padding: 5px;
+    text-align: center;
+    width: 80px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+    
+    </style>
+</head>
+<body>
+    <form action="#" method="get" id="form" name="myform">
+        <table>
+            <tr>
+                <td id="tabhead">enter the data</td>
+            </tr>
+            <tr>
+                <td><input type="number" placeholder="id" id="input1" class="inputs"></td>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="title" id="input2" class="inputs"></td> 
+            </tr>
+            <tr>
+                <td><input type="submit" value="submit" id="submit"></td>
+               </tr>
+    </form>
+</body>
+</html>
