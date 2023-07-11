@@ -35,6 +35,7 @@
        var container=document.createElement("div");
        container.id="container"
        document.body.appendChild(container);
+        var singleElem=document.getElementById("A1")
 
     
       let fetch_data=fetch("https://fakestoreapi.com/products/")
@@ -87,8 +88,9 @@
             del_button.style.cursor="pointer"
 
             del_button.onclick=()=>{
-              // container.remove(div)
+              container.remove(maindiv)
               // del_button.parentElement.remove()
+              singleElem.remove()
 
                 // maindiv.remove(e)
             }
