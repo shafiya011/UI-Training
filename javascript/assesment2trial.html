@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>rectify</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      #navbar {
+        border: 1px solid black;
+      }
+      #maindiv {
+        width: 100%;
+        height: 100vh;
+        border: 1px solid black;
+        display: flex;
+      }
+      #aside {
+        width: 12%;
+        height: 100%;
+        border: 1px solid rgb(42, 28, 225);
+      }
+      #content {
+        height: 100%;
+        width: 88%;
+        border: 1px solid rgb(212, 23, 23);
+        /* background-color: blueviolet; */
+      }
+      #topoptionsdiv {
+        padding: 5px;
+        margin: 10px 0px;
+      }
+      #togglediv {
+        padding: 5px;
+        margin: 5px 0px 0px;
+      }
+      #posttable {
+        height: 100vh;
+        width: 100%;
+        border: 1px solid blue;
+        border-collapse: separate;
+      }
+      td > input {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <div id="gmail">
+          <img
+            src="https://static.dezeen.com/uploads/2020/10/gmail-google-logo-rebrand-workspace-design_dezeen_2364_col_0.jpg"
+            alt="gmail_logo"
+            height="50px"
+            width="100px"
+          />
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div id="maindiv">
+        <div id="aside"></div>
+
+        <div id="content">
+          <div id="topoptionsdiv">
+            <button>Select</button>
+          </div>
+          <div id="togglediv">
+            <button class="switchbuttons" id="postbutton">POST</button>
+            <button class="switchbuttons" id="todosbutton">TODOS</button>
+            <button class="switchbuttons" id="userbutton">USER</button>
+          </div>
+          <div>
+            <table id="posttable">
+              <thead>
+                <th>ID</th>
+                <th>TITLE</th>
+                <th>BODY</th>
+                <th>U/E/D</th>
+              </thead>
+              <tbody id="posttablebody">
+                <tr id="posttablerow"></tr>
+              </tbody>
+            </table>
+
+            <table id="todostable">
+              <thead>
+                <th>ID</th>
+                <th>TITLE</th>
+                <th>COMPLETED</th>
+                <th>U/E/D</th>
+              </thead>
+              <tbody id="todostablebody">
+                <tr id="todostablerow"></tr>
+              </tbody>
+            </table>
+
+            <table id="usertable">
+              <thead>
+                <th>ID</th>
+                <th>TITLE</th>
+                <th>COMPANY_NAME</th>
+                <th>U/E/D</th>
+              </thead>
+              <tbody id="usertablebody">
+                <tr id="usertablerow"></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./assesment.js"></script>
+  </body>
+</html>

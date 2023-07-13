@@ -36,7 +36,7 @@ postbutton.addEventListener("click", () => {
         tr.appendChild(tdid);
         tdid.id = "id" + i;
         var td_id=document.getElementById("id"+i);
-        console.log(tdid);
+        // console.log(td_id);
 
         
 
